@@ -1,0 +1,69 @@
+<!--
+Day 4 
+HTML FORMS 
+1.Form Structure 
+<form action ="" method="POST"></form>
+
+2.Inputs
+✅Text      ✅Date 
+✅Email     ✅Checkbox
+✅Password  ✅Radio
+✅Number   
+
+3.Labels
+<label for ="username"> Username : </label>
+
+4.Textarea
+For long texts ( messages,descriptions)
+
+5.Button
+type='submit'
+type='button'
+
+6.Select Dropdown 
+<select>
+    <option>Kenya</option>
+</select>
+
+7.Basic Attributes
+✅Placeholder
+✅Required
+✅maxLength
+✅minLength
+✅Value 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 - HTML Forms</title>
+</head>
+<body>
+    <h1>Day 4 : HTML Forms Practice</h1> 
+    <form>
+        <label for="name">Full Name :</label><br>
+        <input type="text" id="name" placeholder="Enter your name" required><br><br>
+
+        <label for="email">Email :</label><br>
+        <input type="email" id="email" placeholder="example@gmail.com" required><br><br>
+
+        <label for="Passsword">Passsword</label><br>
+        <input type="text" id="Passsword" minlength="6" required><br><br>
+
+        <label for="Country">Country :</label><br>
+        <select  id="Country">
+            <option value="1">Kenya </option>
+            <option value="2">Tanzania</option>
+            <option value="3">Rwanda</option>
+            <option value="4">Uganda</option>
+        </select><br><br>
+
+        <label for="Message">Message :</label><br>
+        <textarea id="Message" row="4" placeholder="Write Something....."></textarea><br><br>
+
+        <button type="submit">submit</button>
+
+    </form>
+</body>
+</html>
